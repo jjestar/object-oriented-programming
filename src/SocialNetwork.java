@@ -14,7 +14,7 @@ public class SocialNetwork {
         allPosts.add(p);
     }
     public void searchByAuthor(String authorName) {
-        System.out.println("--- Searching for posts by " + authorName + " ---");
+        System.out.println("Searching for posts by " + authorName);
         boolean found = false;
         for (Post p : allPosts) {
             if (p.getAuthor().equals(authorName)) {
@@ -22,17 +22,17 @@ public class SocialNetwork {
                 found = true;
             }
         }
-        if (!found) System.out.println("No posts found.");
+        if (!found) System.out.println("No posts found");
     }
     public void sortPosts() {
-        System.out.println("--- Sorting feed by Likes ---");
+        System.out.println("Sorting feed by Likes");
         Collections.sort(allPosts);
         for (Post p : allPosts) {
             p.display();
         }
     }
     public void showFeed() {
-        System.out.println("--- Feed ---");
+        System.out.println("Feed");
         for(Post p : allPosts) {
             p.display();
         }
