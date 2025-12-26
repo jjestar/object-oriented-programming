@@ -1,6 +1,6 @@
 import java.util.Objects;
 public abstract class Post implements Comparable<Post> {
-    protected int likes; // protected чтобы дети видели
+    protected int likes;
     protected String author;
     public Post(int likes, String author) {
         this.likes = likes;
