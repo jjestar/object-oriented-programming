@@ -9,7 +9,6 @@ public class SocialNetwork {
         this.allPosts = new ArrayList<>();
     }
     public String getName() { return name; }
-
     public void addPost(Post p) {
         allPosts.add(p);
     }
