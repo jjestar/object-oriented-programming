@@ -1,3 +1,4 @@
+package com.example.demo;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Assignment 3 Check");
@@ -7,18 +8,18 @@ public class Main {
         Profile p1 = new Profile("gang", "roblox player", 10);
         Profile p2 = new Profile("abylai", "Senior Developer", 5000);
 
-        System.out.println("\n--- Adding Profiles ---");
+        System.out.println("Adding Profiles");
         db.addProfile(p1);
         db.addProfile(p2);
 
-        System.out.println("\n--- Reading Profiles ---");
+        System.out.println("Reading Profiles");
         db.getAllProfiles();
 
-        System.out.println("\n--- Updating Data ---");
+        System.out.println("Updating Data");
         db.updateBio("gang", "Minecraft pro player");
         db.getAllProfiles();
 
-        System.out.println("\n--- Deleting Data ---");
+        System.out.println("Deleting Data");
         db.deleteProfile("abylai");
         db.getAllProfiles();
     }

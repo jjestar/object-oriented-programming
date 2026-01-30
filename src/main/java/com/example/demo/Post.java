@@ -1,3 +1,4 @@
+package com.example.demo;
 import java.util.Objects;
 public abstract class Post implements Comparable<Post> {
     protected int likes;

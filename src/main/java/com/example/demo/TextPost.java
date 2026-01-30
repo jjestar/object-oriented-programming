@@ -1,3 +1,4 @@
+package com.example.demo;
 public class TextPost extends Post {
     private String text;
     public TextPost(String text, int likes, String author) {
